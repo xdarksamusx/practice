@@ -1,0 +1,31 @@
+// const books = [
+//   {
+//     title: "The Great Gatsby",
+//     author: "F. Scott Fitzgerald",
+//     genres: ["Fiction", "Classic"]
+//   },
+//   {
+//     title: "To Kill a Mockingbird",
+//     author: "Harper Lee",
+//     genres: ["Fiction", "Classic"]
+//   },
+//   // Add more books
+// ];
+
+// const booksDisplayed = books.map(book =>({title : book.title, author: book.author}));
+
+// console.log(booksDisplayed)
+
+const state = {
+  options: [
+    { option: ["wow", "cool", "amazing", "wonderful"], isOn: true },
+    { option: ["sucks", "bad", "crap", "miserable"], isOn: false },
+
+    { option: ["normal", "neutral", "nothing", "zero"], isOn: false }
+  ]
+};
+
+
+const arraysMapped = state.options.map(({ option }) => ({ option }));
+
+console.log(arraysMapped);
